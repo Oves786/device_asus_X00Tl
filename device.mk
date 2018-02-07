@@ -257,6 +257,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
     android.hardware.health@2.0-service
+    
+#MemeUI offline charging animation    
+PRODUCT_PACKAGES += \
+    chargeonlymode
 
 # HIDL
 PRODUCT_PACKAGES += \
