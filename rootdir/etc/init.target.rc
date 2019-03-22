@@ -178,6 +178,12 @@ service thermal-engine /vendor/bin/thermal-engine
    socket thermal-send-rule stream 0660 system system
    group root
 
+service time_daemon /system/vendor/bin/time_daemon
+    class main
+    user system
+    group system
+    capabilities SYS_TIME
+
 service adsprpcd /vendor/bin/adsprpcd audiopd
    class main
    user media
