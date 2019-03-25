@@ -28,7 +28,7 @@
  *           -green light 
  */
  
-#define HAL_DEBUG
+//#define HAL_DEBUG
 #define LOG_TAG "LightService"
 
 #include "Light.h"
@@ -119,7 +119,9 @@ void Light::setLcdBacklight(const LightState& state) {
     // If max panel brightness is not the default (255),
     // apply linear scaling across the accepted range.
     if (mLcdBacklight.second != DEFAULT_MAX_BRIGHTNESS) {
+#ifdef HAL_DEBUG
         int old_brightness = brightness;
+#endif
         brightness = brightness * mLcdBacklight.second / DEFAULT_MAX_BRIGHTNESS;
 #ifdef HAL_DEBUG
         LOG(VERBOSE) << "scaling brightness " << old_brightness << " => " << brightness;
