@@ -859,7 +859,7 @@ service profiler_daemon /system/bin/profiler_daemon
 service charger /sbin/chargeonlymode
     class charger
     group system graphics
-    seclabel u:r:healthd:s0
+    seclabel u:r:charger:s0
 
 service charger_monitor /system/bin/charger_monitor
     user root
