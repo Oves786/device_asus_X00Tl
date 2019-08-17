@@ -290,7 +290,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.fmw-RG
+    android.hardware.light@2.0-service.asus_X00T
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \
