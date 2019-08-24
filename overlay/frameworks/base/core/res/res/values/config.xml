@@ -17,6 +17,11 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	
+	<!-- Amount of time it takes for the light sensor to warm up in milliseconds.
+          For this time after the screen turns on, the Power Manager
+          will not debounce light sensor readings -->
+    <integer name="config_lightSensorWarmupTime">200</integer>
 
     <!-- Flag specifying whether VT should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
