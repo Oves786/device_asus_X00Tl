@@ -21,6 +21,10 @@
 # definition file).
 #
 
+#APN Configurations 
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
