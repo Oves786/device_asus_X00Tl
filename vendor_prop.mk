@@ -241,7 +241,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Dpi
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=384
-
-# ZRAM disk
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.config.zram=true
