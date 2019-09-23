@@ -847,6 +847,7 @@ service charger /sbin/chargeonlymode
     class charger
     user system
     group system graphics input
+    capabilities SYS_BOOT
     seclabel u:r:charger:s0
 
 service charger_monitor /system/bin/charger_monitor
