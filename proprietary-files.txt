@@ -1190,6 +1190,7 @@ etc/permissions/telephonyservice.xml
 framework/QtiTelephonyServicelibrary.jar
 framework/embmslibrary.jar
 -framework/qcrilhook.jar
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|cb9d80f42cde08e6620523f8bac0f298ecc79b56
 vendor/bin/ATFWD-daemon
 vendor/bin/hw/qcrild
 vendor/bin/netmgrd
@@ -1417,5 +1418,3 @@ vendor/lib64/libwfdhdcpcp.so
 # CNE - from mata QP1A.190711.107
 -priv-app/CNEService/CNEService.apk|d8579ab4633111f5473b3be8c9da487504908167
 
-# RIL - from mata QP1A.190711.107
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|956a4017d0ba7f68e6d225e57b40d3b2bcbb4837
