@@ -151,7 +151,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
     ro.opengles.version=196610 \
-    ro.sf.lcd_density=480 \
+    ro.sf.lcd_density=420 \
     sdm.debug.rotator_downscale=1 \
     debug.sf.enable_gl_backpressure=1 \
     vendor.display.enable_default_color_mode=1
@@ -308,7 +308,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #enable AAC frame ctl for A2DP sinks
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.bt.aac_frm_ctl.enabled=true
-
-# Dpi
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=384
