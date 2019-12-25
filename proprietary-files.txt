@@ -125,10 +125,10 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Prebuilt Audio HAL - from NXP zip
 vendor/lib/hw/audio.primary.sdm660.so|d7f597447f0b7a85ba25213bd20aee19005b18ea
-vendor/lib/libaudio_log_utils.so|c0187996e4aa81683518645d1e1931afea5491de
+-vendor/lib/libaudio_log_utils.so|c0187996e4aa81683518645d1e1931afea5491de
 vendor/lib/libtinycompress.so|9a851877b2ad6b256a377a0c63ea181ac6a0293d
 vendor/lib64/hw/audio.primary.sdm660.so|81455ba96a05f138bc3ac693f8ef39d6890275a6
-vendor/lib64/libaudio_log_utils.so|7200b1d05406530ef20fb8ac1bfd2b2e1845d0dd
+-vendor/lib64/libaudio_log_utils.so|7200b1d05406530ef20fb8ac1bfd2b2e1845d0dd
 vendor/lib64/libtinycompress.so|7af24c2e713747f0b1478f691504bfe27a1aec04
 
 # Bluetooth - from LA.UM.7.2.r1-06900-sdm660.0
