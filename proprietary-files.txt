@@ -1489,6 +1489,3 @@ vendor/lib/libwfdmodulehdcpsession.so
 vendor/lib64/libmmosal_proprietary.so
 vendor/lib64/libwfdhdcpcp.so
 
-# CNE - from mata QP1A.190711.107
--priv-app/CNEService/CNEService.apk|d8579ab4633111f5473b3be8c9da487504908167
-
