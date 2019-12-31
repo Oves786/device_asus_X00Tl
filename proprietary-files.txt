@@ -42,12 +42,13 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
-# ANT+ - from LA.UM.8.2.r1-04300-sdm660.0
+# ANT+ - from platina-user 10 QKQ1.190910.002 9.12.4
 -lib/libantradio.so|37c36369eeab19d5e6266d9d25ae0de9bb59502d
-product/lib64/com.qualcomm.qti.ant@1.0.so|452f459f04e5d819bf0325f83eaa14e0337a3c13
 -lib64/libantradio.so|43f6105678c082216f1606d8dd43fa1b0b753d7e
-vendor/lib64/com.qualcomm.qti.ant@1.0.so|cd400d59d68aad8e547487de9c3f49cefd4d2fca
-vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|474187a8132aabd45089cacd2f8de9a6d9f449a3
+product/lib/com.qualcomm.qti.ant@1.0.so|8119c98f53a94736d95a2fb59225e0a054e038b8
+product/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50f
+vendor/lib/com.qualcomm.qti.ant@1.0.so|1b5236c8ad7990c2bcf5a91f1d3b3a7f2c8f8adf
+vendor/lib64/com.qualcomm.qti.ant@1.0.so|181a8ab9b1d40705d3151821b53732c5566a2848
 
 # Audio
 vendor/bin/audioflacapp
@@ -131,11 +132,18 @@ vendor/lib64/hw/audio.primary.sdm660.so|81455ba96a05f138bc3ac693f8ef39d6890275a6
 -vendor/lib64/libaudio_log_utils.so|7200b1d05406530ef20fb8ac1bfd2b2e1845d0dd
 vendor/lib64/libtinycompress.so|7af24c2e713747f0b1478f691504bfe27a1aec04
 
-# Bluetooth - from LA.UM.7.2.r1-06900-sdm660.0
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|514226960669db32e44a9457e6de7c07ac70ec1b
+# Bluetooth - from platina-user 10 QKQ1.190910.002 9.12.4
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|2df5049a2f33a4cd9e552f64737771f1125aec2c
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|4e14141172904d2aa6e6c6944b6f15312b4e8651
-vendor/lib64/libbtnv.so|f354bf758b8d0b35e6ac0005640d05abe0f89280
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|db990717f0569c5ac279f94000af26910626cde6
+vendor/lib/libbtnv.so|a7c34e1bb723e8dd09d637ee877f8fda74421b91
+vendor/lib64/libbtnv.so|5364ea0d6e0ee268171d21d21ca9d3b7f64fe952
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|5c24249adf85a30aa66f6a391bf697063d989a87
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|9346946b110086a6b473c8226e072e9a0cdbb87e
+vendor/lib/libbt-hidlclient.so|db653f95deffc108ab3c12821589a0e64e8c7a30
+vendor/lib64/libbt-hidlclient.so|4a4038013bf438627154899d3823c9346c3d84ec
+vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|20464213b5f2cdb7d9c10f31b5b53fc03526698f
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|c51214b092f7e47c2d21989a605c4a8c7e7b85eb
 
 # Camera
 vendor/lib/hw/camera.sdm660.so
@@ -913,17 +921,20 @@ vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
-# FM
-lib/fm_helium.so
-lib/libfm-hci.so
--lib/vendor.qti.hardware.fm@1.0.so
-lib64/fm_helium.so
-lib64/libfm-hci.so
--lib64/vendor.qti.hardware.fm@1.0.so
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
+# FM - from platina-user 10 QKQ1.190910.002 9.12.4
+lib/fm_helium.so|feb4819f1898c67dfda4f965d7cc2711c74d1a99
+lib/libfm-hci.so|7700b02faa484ff682c618402f62b86bf8588db2
+lib64/fm_helium.so|bc9f6314528630c060b593cef4a8cec786b22467
+lib64/libfm-hci.so|589e9e290acfa18a49deba33606ed158d5e7f898
+-product/lib/vendor.qti.hardware.fm@1.0.so|a090651122fcad265ae7562c88dca746f893ad36
+-product/lib64/vendor.qti.hardware.fm@1.0.so|fc7ad886f82089edf36509865fadac17a7340f32
+vendor/bin/fm_qsoc_patches|f7b50543d0b964dd52c2a19eea5417667514f155
+vendor/lib/ftm_fm_lib.so|ee60487207958e6f244f0e875d82ad5e3f6883f3
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|2087fee60eb44c097ee9e6c93f4c873fff280866
+vendor/lib/vendor.qti.hardware.fm@1.0.so|89a7ec5cc673d13afc73116eccff2e58f218a34d
+vendor/lib64/ftm_fm_lib.so|38ea0155f6d57b4a195e976288ebcb642be06d7a
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|506efd87250697bdae271f86ea472785a77b84ef
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|073cace3aa8d0ffa025d9df67c45f8a907109339
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
